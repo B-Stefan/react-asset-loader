@@ -2,7 +2,7 @@
   "name": "react-asset-loader",
   "version": "0.0.1",
   "description": "A simple react component for loading assets. It allows you to load from a single asset to multiple assets without affecting the pageload speed. You can also add custom classes, attributes and callback functions.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": {
     "name": "Juan Cabrera",
     "email": "juan.acc@gmail.com", 
@@ -10,7 +10,10 @@
   },
   "homepage": "https://github.com/juancabrera/react-asset-loader",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1”",
+    "dist": "rm -r -f ./dist && ./node_modules/.bin/babel ./ --out-dir ./dist --ignore ./node_modules/",
+    "prepublish": "npm run dist"
+
   },
   "repository": {
     "type": "git",
