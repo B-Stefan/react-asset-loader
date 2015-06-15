@@ -1,3 +1,4 @@
+var React = require("react");
 var LoadAssets = React.createClass({
   getInitialState: function () {
     // 'loaded' state by default is false

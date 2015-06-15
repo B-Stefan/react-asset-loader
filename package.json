@@ -5,15 +5,14 @@
   "main": "dist/index.js",
   "author": {
     "name": "Juan Cabrera",
-    "email": "juan.acc@gmail.com", 
-    "url" : "http://juan.me/"
+    "email": "juan.acc@gmail.com",
+    "url": "http://juan.me/"
   },
   "homepage": "https://github.com/juancabrera/react-asset-loader",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1”",
     "dist": "rm -r -f ./dist && ./node_modules/.bin/babel ./ --out-dir ./dist --ignore ./node_modules/",
     "prepublish": "npm run dist"
-
   },
   "repository": {
     "type": "git",
@@ -33,5 +32,8 @@
   ],
   "bugs": {
     "url": "https://github.com/juancabrera/react-asset-loader/issues"
+  },
+  "dependencies": {
+    "react": "^0.13.3"
   }
 }
